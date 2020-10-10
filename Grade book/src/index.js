@@ -1,4 +1,5 @@
-// Complete the function so that it finds the mean of the three scores passed to it and returns the letter value associated with that grade.
+// Complete the function so that it finds the mean of the three scores passed to it and 
+// returns the letter value associated with that grade.
 
 // Numerical Score	Letter Grade
 // 90 <= score <= 100	'A'
@@ -11,6 +12,16 @@
 
 // Write the function to find the getGrade obtained.
 function getGrade (s1, s2, s3) {
-   //your code here
-  }
+  var avg=(s1+s2+s3)/3;
+  if(avg>=90)
+  return 'A';
+  else if(avg>=80&&avg<90)
+  return 'B';
+  else if(avg>=70&&avg<80)
+  return 'C';
+  else if(avg>=60&&avg<70)
+  return 'D';
+  else
+  return 'F';
+ }
 //Use SpecRunner to check the Test Cases.
